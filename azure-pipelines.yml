@@ -25,6 +25,13 @@ steps:
 # Command line
 # Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
 
+#- task: UseDotNet@2
+#  displayName: 'Install .NET Core SDK'
+#  inputs:
+#    version: 6.x
+#    performMultiLevelLookup: true
+#    includePreviewVersions: true # Required for preview versions
+    
 - task: CmdLine@2
   inputs:
     script: 'mkdir d:\a\1\MobEAD' 
